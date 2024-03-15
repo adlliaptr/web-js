@@ -120,6 +120,10 @@ dataMhs.map((item)=>(
 function Kuliah(nama, nim){
     console.log(`${nama} memiliki NIM ${nim}`)
 }
+function User(pertanyaan, email){
+    alert('User dengan Email '+email+' memiliki pertanyaan '+pertanyaan)
+}
+
 
 //DOM
 const ambilNama = document.getElementById('Nama');
@@ -165,10 +169,28 @@ formPertanyaan.addEventListener('submit', function(event){
 
     console.log(emailValue);
     console.log(pertanyaanValue);
-    alert('Pertanyaan '+ pertanyaanValue +' berhasil masuk, silakan menunggu jawaban...')
+    // alert('Pertanyaan '+ pertanyaanValue +' berhasil masuk, silakan menunggu jawaban...')
 
-    
+    User(pertanyaanValue,emailValue);
     localStorage.setItem('emailUser',emailValue);
     const emailUser = localStorage.getItem('emailUser');
     console.log('Email = ',emailUser);
 })
+
+//Style
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var navbar = document.getElementById("navbar");
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.classList.remove("bg-dark");
+        navbar.classList.remove("navbar-dark");
+        navbar.classList.add("navbar-light");
+        navbar.classList.add("bg-light");
+    } else {
+        navbar.classList.remove("navbar-light");
+        navbar.classList.remove("bg-light");
+        navbar.classList.add("bg-dark");
+        navbar.classList.add("navbar-dark");
+    }
+  }
