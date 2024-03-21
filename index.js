@@ -1,7 +1,7 @@
-console.log("Hello world");
-// alert('Halo semua');
+console.log("Hello Adel");
+alert('Halo semua');
 
-//Number, untuk tipe variable yang akan menampung angka
+// //Number, untuk tipe variable yang akan menampung angka
 console.log(1);
 const angka = 10;
 let count = 10;
@@ -13,15 +13,15 @@ console.log(count);
 count--;
 console.log(count);
 
-//String, untuk tipe variable yang akan menampung huruf baik 1 huruf maupun multi huruf
+// //String, untuk tipe variable yang akan menampung huruf baik 1 huruf maupun multi huruf
 let nama = 'Zaki Fauzan';
 console.log('nama saya adalah',nama);
 
-//Boolean, untuk tipe variable yang akan menampung true atau false
+// //Boolean, untuk tipe variable yang akan menampung true atau false
 console.log(angka == '10')
 console.log(angka === '10')
 
-//Array
+// //Array
 const mahasiswa = ['Arsel', 'Novil', 'Rezky', 'Zaki'];
 let namaMahasiswa = new Array('Zaki', 'Arsel', 'Novil', 'Rezky');
 let namaMahasiswi = new Array(3);
@@ -32,7 +32,7 @@ console.log(namaMahasiswa);
 console.log(namaMahasiswi);
 console.log(mhsNIM);
 
-namaMahasiswi[0] = 'Nurul';
+namaMahasiswi[0] = 'Tia';
 namaMahasiswa.push('Novil');
 console.log(namaMahasiswi);
 
@@ -45,7 +45,7 @@ console.log(jadwal);
 jadwal = 'Subuh';
 console.log(jadwal);
 
-//const
+// //const
 const namaDosen = 'Putut'; 
 console.log(namaDosen);
 //Tidak bisa di deklarasi ulang
@@ -53,7 +53,7 @@ console.log(namaDosen);
 // namaDosen = 'labib';
 // console.log(namaDosen);
 
-//let
+// //let
 let mataKuliah = 'Pemograman Web';
 console.log(mataKuliah);
 mataKuliah = 'Analisis Design Perangkat Lunak';
@@ -145,7 +145,7 @@ const Adopsi = document.getElementById('Adopsi');
 const Tecno = document.getElementById('Tecno');
 console.log(KI.innerHTML)
 
-//Event
+// //Event
 btn1.addEventListener('click' ,function(event){
     event.preventDefault()
     alert('Ini Matkul '+ KI.innerHTML)
